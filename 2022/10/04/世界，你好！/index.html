@@ -112,6 +112,24 @@ I can eat glass, it doesn’t hurt me
 </article>
 
   
+	<section id="comment" class="comment">
+		<div id="gitalk-container"></div>
+	</section>
+	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+	<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+	<script>
+		var gitalk = new Gitalk({
+			clientID: '21a892c4ca2b2984835b',
+			clientSecret: 'c7787197b9f6c6e65ec0ce0b55cc5722349266c8',
+			repo: 'YangLings-gitalk',
+			owner: 'Yang-L1NG',
+			admin: ['Yang-L1NG', 'axotot1'],
+			id: location.pathname,
+			distractionFreeMode: false
+		})
+		gitalk.render('gitalk-container')
+	</script>
+
 
 
 
