@@ -112,24 +112,25 @@ I can eat glass, it doesn’t hurt me
 </article>
 
   
-
-
 	<section id="comment" class="comment">
-		<div id="gitment"></div>
+		<div id="gitalk-container"></div>
 	</section>
-	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+	<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 	<script>
-		var gitment = new Gitment({
-			owner: 'Yang-L1NG',
+		var gitalk = new Gitalk({
+			clientID: '21a892c4ca2b2984835b',
+			clientSecret: 'c7787197b9f6c6e65ec0ce0b55cc5722349266c8',
 			repo: 'YangLings-gitalk',
-			oauth: {
-				client_id: '21a892c4ca2b2984835b',
-				client_secret: 'c7787197b9f6c6e65ec0ce0b55cc5722349266c8',
-			},
+			owner: 'Yang-L1NG',
+			admin: ['Yang-L1NG', 'axotot1'],
+			id: location.pathname,
+			distractionFreeMode: false
 		})
-		gitment.render('gitment')
+		gitalk.render('gitalk-container')
 	</script>
+
+
 
 
 
